@@ -1,9 +1,11 @@
 const express=require("express")
+const cors=require("cors")
 const fileupload=require("express-fileupload")
 const { dbconnect } = require("./config/dbconnect")
 const { router } = require("./routes/upload")
 const path = require('path');
 const app=express()
+app.use(cors())
 const PORT=7000
 app.use(fileupload())
 app.use(express.json())

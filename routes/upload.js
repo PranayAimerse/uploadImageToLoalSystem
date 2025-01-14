@@ -1,5 +1,5 @@
 const express=require("express")
-const { imageupload } = require("../controllers/userController")
+const { imageupload } = require("../controllers/usercontrolellermultipleimages")
 
 const router=express.Router()
 
