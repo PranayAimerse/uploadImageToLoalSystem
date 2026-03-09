@@ -6,7 +6,7 @@ const { router } = require("./routes/upload")
 const path = require('path');
 const app=express()
 app.use(cors())
-const PORT=7000
+const PORT=3000
 app.use(fileupload())
 app.use(express.json())
 app.use('/assets/', express.static(path.join(__dirname, '/assets/')));
