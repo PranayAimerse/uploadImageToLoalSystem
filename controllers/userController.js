@@ -57,3 +57,12 @@
 //     });
 //   }
 // };
+
+
+const register=(req,res)=>{
+const {email,number}=req.body
+return res.send(200).json
+({
+    sucess:true
+})
+}
