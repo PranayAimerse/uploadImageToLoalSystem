@@ -57,3 +57,22 @@ exports.imageupload = async (req, res) => {
     });
   }
 };
+//       data: user,
+//     });
+//   } catch (error) {
+//     console.error("Error uploading file: ", error);
+//     return res.status(500).json({
+//       success: false,
+//       message: "Error in uploading file.",
+//     });
+//   }
+// };
+
+
+const register=(req,res)=>{
+const {email,number}=req.body
+return res.send(200).json
+({
+    sucess:true
+})
+}
